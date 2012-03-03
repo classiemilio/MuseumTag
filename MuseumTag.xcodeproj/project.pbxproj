@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3231F6A1501F90E004E2D15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3231F691501F90E004E2D15 /* UIKit.framework */; };
+		B3231F6C1501F90E004E2D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3231F6B1501F90E004E2D15 /* Foundation.framework */; };
+		B3231F6E1501F90E004E2D15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3231F6D1501F90E004E2D15 /* CoreGraphics.framework */; };
+		B3231F741501F90E004E2D15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3231F721501F90E004E2D15 /* InfoPlist.strings */; };
+		B3231F761501F90E004E2D15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3231F751501F90E004E2D15 /* main.m */; };
+		B3231F7A1501F90E004E2D15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3231F791501F90E004E2D15 /* AppDelegate.m */; };
+		B3231F7D1501F90F004E2D15 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3231F7B1501F90F004E2D15 /* MainStoryboard_iPhone.storyboard */; };
+		B3231F801501F90F004E2D15 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3231F7E1501F90F004E2D15 /* MainStoryboard_iPad.storyboard */; };
+		B3231F831501F90F004E2D15 /* MuseumsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3231F821501F90F004E2D15 /* MuseumsVC.m */; };
+		B3231F851501F90F004E2D15 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B3231F841501F90F004E2D15 /* first.png */; };
+		B3231F871501F90F004E2D15 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3231F861501F90F004E2D15 /* first@2x.png */; };
+		B3231F8A1501F90F004E2D15 /* CheckInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3231F891501F90F004E2D15 /* CheckInVC.m */; };
+		B3231F8C1501F90F004E2D15 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B3231F8B1501F90F004E2D15 /* second.png */; };
+		B3231F8E1501F90F004E2D15 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3231F8D1501F90F004E2D15 /* second@2x.png */; };
+		B3231F961501F90F004E2D15 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3231F951501F90F004E2D15 /* SenTestingKit.framework */; };
+		B3231F971501F90F004E2D15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3231F691501F90E004E2D15 /* UIKit.framework */; };
+		B3231F981501F90F004E2D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3231F6B1501F90E004E2D15 /* Foundation.framework */; };
+		B3231FA01501F90F004E2D15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3231F9E1501F90F004E2D15 /* InfoPlist.strings */; };
+		B3231FA31501F90F004E2D15 /* MuseumTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3231FA21501F90F004E2D15 /* MuseumTagTests.m */; };
+		B3231FB3150210CB004E2D15 /* YouVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B3231FB2150210CB004E2D15 /* YouVC.m */; };
+		B3231FBD150295F5004E2D15 /* MuseumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3231FBC150295F5004E2D15 /* MuseumCell.m */; };
+		B3231FC1150299FB004E2D15 /* MuseumSelectedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3231FC0150299FA004E2D15 /* MuseumSelectedCell.m */; };
+		B3231FC315029B5E004E2D15 /* cantor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3231FC215029B5E004E2D15 /* cantor.jpg */; };
+		B35A9EFA1502AADD0011C871 /* computerhistory.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9EF41502AADD0011C871 /* computerhistory.jpg */; };
+		B35A9EFB1502AADD0011C871 /* exploratorium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9EF51502AADD0011C871 /* exploratorium.jpg */; };
+		B35A9EFC1502AADD0011C871 /* guggenheim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9EF61502AADD0011C871 /* guggenheim.jpg */; };
+		B35A9EFD1502AADD0011C871 /* louvre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9EF71502AADD0011C871 /* louvre.jpg */; };
+		B35A9EFE1502AADD0011C871 /* moma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9EF81502AADD0011C871 /* moma.jpg */; };
+		B35A9EFF1502AADD0011C871 /* thetech.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9EF91502AADD0011C871 /* thetech.jpg */; };
+		B35A9F021502AC0A0011C871 /* wax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9F011502AC0A0011C871 /* wax.jpg */; };
+		B35A9F051502ADD30011C871 /* MuseumVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A9F041502ADD30011C871 /* MuseumVC.m */; };
+		B35A9F081502AFEF0011C871 /* ExhibitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B35A9F071502AFEF0011C871 /* ExhibitCell.m */; };
+		B35A9F0E1502B1730011C871 /* africa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9F091502B1730011C871 /* africa.jpg */; };
+		B35A9F0F1502B1730011C871 /* evans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9F0A1502B1730011C871 /* evans.jpg */; };
+		B35A9F101502B1730011C871 /* hell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9F0B1502B1730011C871 /* hell.jpg */; };
+		B35A9F111502B1730011C871 /* spring.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9F0C1502B1730011C871 /* spring.jpg */; };
+		B35A9F121502B1730011C871 /* thinker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35A9F0D1502B1730011C871 /* thinker.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3231F991501F90F004E2D15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3231F5C1501F90D004E2D15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3231F641501F90D004E2D15;
+			remoteInfo = MuseumTag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3231F651501F90E004E2D15 /* MuseumTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseumTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3231F691501F90E004E2D15 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B3231F6B1501F90E004E2D15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B3231F6D1501F90E004E2D15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B3231F711501F90E004E2D15 /* MuseumTag-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MuseumTag-Info.plist"; sourceTree = "<group>"; };
+		B3231F731501F90E004E2D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3231F751501F90E004E2D15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3231F771501F90E004E2D15 /* MuseumTag-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuseumTag-Prefix.pch"; sourceTree = "<group>"; };
+		B3231F781501F90E004E2D15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3231F791501F90E004E2D15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3231F7C1501F90F004E2D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B3231F7F1501F90F004E2D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B3231F811501F90F004E2D15 /* MuseumsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuseumsVC.h; sourceTree = "<group>"; };
+		B3231F821501F90F004E2D15 /* MuseumsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MuseumsVC.m; sourceTree = "<group>"; };
+		B3231F841501F90F004E2D15 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		B3231F861501F90F004E2D15 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		B3231F881501F90F004E2D15 /* CheckInVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckInVC.h; sourceTree = "<group>"; };
+		B3231F891501F90F004E2D15 /* CheckInVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckInVC.m; sourceTree = "<group>"; };
+		B3231F8B1501F90F004E2D15 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		B3231F8D1501F90F004E2D15 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		B3231F941501F90F004E2D15 /* MuseumTagTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuseumTagTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3231F951501F90F004E2D15 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B3231F9D1501F90F004E2D15 /* MuseumTagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MuseumTagTests-Info.plist"; sourceTree = "<group>"; };
+		B3231F9F1501F90F004E2D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B3231FA11501F90F004E2D15 /* MuseumTagTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuseumTagTests.h; sourceTree = "<group>"; };
+		B3231FA21501F90F004E2D15 /* MuseumTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MuseumTagTests.m; sourceTree = "<group>"; };
+		B3231FB1150210CB004E2D15 /* YouVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouVC.h; sourceTree = "<group>"; };
+		B3231FB2150210CB004E2D15 /* YouVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouVC.m; sourceTree = "<group>"; };
+		B3231FBB150295F5004E2D15 /* MuseumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuseumCell.h; sourceTree = "<group>"; };
+		B3231FBC150295F5004E2D15 /* MuseumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuseumCell.m; sourceTree = "<group>"; };
+		B3231FBF150299FA004E2D15 /* MuseumSelectedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuseumSelectedCell.h; sourceTree = "<group>"; };
+		B3231FC0150299FA004E2D15 /* MuseumSelectedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuseumSelectedCell.m; sourceTree = "<group>"; };
+		B3231FC215029B5E004E2D15 /* cantor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cantor.jpg; sourceTree = "<group>"; };
+		B35A9EF41502AADD0011C871 /* computerhistory.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = computerhistory.jpg; sourceTree = "<group>"; };
+		B35A9EF51502AADD0011C871 /* exploratorium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = exploratorium.jpg; sourceTree = "<group>"; };
+		B35A9EF61502AADD0011C871 /* guggenheim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = guggenheim.jpg; sourceTree = "<group>"; };
+		B35A9EF71502AADD0011C871 /* louvre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = louvre.jpg; sourceTree = "<group>"; };
+		B35A9EF81502AADD0011C871 /* moma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moma.jpg; sourceTree = "<group>"; };
+		B35A9EF91502AADD0011C871 /* thetech.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thetech.jpg; sourceTree = "<group>"; };
+		B35A9F011502AC0A0011C871 /* wax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wax.jpg; sourceTree = "<group>"; };
+		B35A9F031502ADD30011C871 /* MuseumVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuseumVC.h; sourceTree = "<group>"; };
+		B35A9F041502ADD30011C871 /* MuseumVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MuseumVC.m; sourceTree = "<group>"; };
+		B35A9F061502AFEF0011C871 /* ExhibitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExhibitCell.h; sourceTree = "<group>"; };
+		B35A9F071502AFEF0011C871 /* ExhibitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExhibitCell.m; sourceTree = "<group>"; };
+		B35A9F091502B1730011C871 /* africa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = africa.jpg; sourceTree = "<group>"; };
+		B35A9F0A1502B1730011C871 /* evans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = evans.jpg; sourceTree = "<group>"; };
+		B35A9F0B1502B1730011C871 /* hell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hell.jpg; sourceTree = "<group>"; };
+		B35A9F0C1502B1730011C871 /* spring.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spring.jpg; sourceTree = "<group>"; };
+		B35A9F0D1502B1730011C871 /* thinker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thinker.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3231F621501F90D004E2D15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3231F6A1501F90E004E2D15 /* UIKit.framework in Frameworks */,
+				B3231F6C1501F90E004E2D15 /* Foundation.framework in Frameworks */,
+				B3231F6E1501F90E004E2D15 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3231F901501F90F004E2D15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3231F961501F90F004E2D15 /* SenTestingKit.framework in Frameworks */,
+				B3231F971501F90F004E2D15 /* UIKit.framework in Frameworks */,
+				B3231F981501F90F004E2D15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3231F5A1501F90D004E2D15 = {
+			isa = PBXGroup;
+			children = (
+				B3231F6F1501F90E004E2D15 /* MuseumTag */,
+				B3231F9B1501F90F004E2D15 /* MuseumTagTests */,
+				B3231F681501F90E004E2D15 /* Frameworks */,
+				B3231F661501F90E004E2D15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3231F661501F90E004E2D15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3231F651501F90E004E2D15 /* MuseumTag.app */,
+				B3231F941501F90F004E2D15 /* MuseumTagTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3231F681501F90E004E2D15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3231F691501F90E004E2D15 /* UIKit.framework */,
+				B3231F6B1501F90E004E2D15 /* Foundation.framework */,
+				B3231F6D1501F90E004E2D15 /* CoreGraphics.framework */,
+				B3231F951501F90F004E2D15 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3231F6F1501F90E004E2D15 /* MuseumTag */ = {
+			isa = PBXGroup;
+			children = (
+				B35A9F091502B1730011C871 /* africa.jpg */,
+				B35A9F0A1502B1730011C871 /* evans.jpg */,
+				B35A9F0B1502B1730011C871 /* hell.jpg */,
+				B35A9F0C1502B1730011C871 /* spring.jpg */,
+				B35A9F0D1502B1730011C871 /* thinker.jpg */,
+				B35A9F011502AC0A0011C871 /* wax.jpg */,
+				B3231FC215029B5E004E2D15 /* cantor.jpg */,
+				B3231F781501F90E004E2D15 /* AppDelegate.h */,
+				B3231F791501F90E004E2D15 /* AppDelegate.m */,
+				B3231F7B1501F90F004E2D15 /* MainStoryboard_iPhone.storyboard */,
+				B35A9EF41502AADD0011C871 /* computerhistory.jpg */,
+				B35A9EF51502AADD0011C871 /* exploratorium.jpg */,
+				B35A9EF61502AADD0011C871 /* guggenheim.jpg */,
+				B35A9EF71502AADD0011C871 /* louvre.jpg */,
+				B35A9EF81502AADD0011C871 /* moma.jpg */,
+				B35A9EF91502AADD0011C871 /* thetech.jpg */,
+				B3231FBF150299FA004E2D15 /* MuseumSelectedCell.h */,
+				B3231FC0150299FA004E2D15 /* MuseumSelectedCell.m */,
+				B3231FBB150295F5004E2D15 /* MuseumCell.h */,
+				B3231FBC150295F5004E2D15 /* MuseumCell.m */,
+				B3231FB1150210CB004E2D15 /* YouVC.h */,
+				B3231FB2150210CB004E2D15 /* YouVC.m */,
+				B3231F7E1501F90F004E2D15 /* MainStoryboard_iPad.storyboard */,
+				B3231F811501F90F004E2D15 /* MuseumsVC.h */,
+				B3231F821501F90F004E2D15 /* MuseumsVC.m */,
+				B3231F841501F90F004E2D15 /* first.png */,
+				B3231F861501F90F004E2D15 /* first@2x.png */,
+				B3231F881501F90F004E2D15 /* CheckInVC.h */,
+				B3231F891501F90F004E2D15 /* CheckInVC.m */,
+				B3231F8B1501F90F004E2D15 /* second.png */,
+				B3231F8D1501F90F004E2D15 /* second@2x.png */,
+				B3231F701501F90E004E2D15 /* Supporting Files */,
+				B35A9F031502ADD30011C871 /* MuseumVC.h */,
+				B35A9F041502ADD30011C871 /* MuseumVC.m */,
+				B35A9F061502AFEF0011C871 /* ExhibitCell.h */,
+				B35A9F071502AFEF0011C871 /* ExhibitCell.m */,
+			);
+			path = MuseumTag;
+			sourceTree = "<group>";
+		};
+		B3231F701501F90E004E2D15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3231F711501F90E004E2D15 /* MuseumTag-Info.plist */,
+				B3231F721501F90E004E2D15 /* InfoPlist.strings */,
+				B3231F751501F90E004E2D15 /* main.m */,
+				B3231F771501F90E004E2D15 /* MuseumTag-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3231F9B1501F90F004E2D15 /* MuseumTagTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3231FA11501F90F004E2D15 /* MuseumTagTests.h */,
+				B3231FA21501F90F004E2D15 /* MuseumTagTests.m */,
+				B3231F9C1501F90F004E2D15 /* Supporting Files */,
+			);
+			path = MuseumTagTests;
+			sourceTree = "<group>";
+		};
+		B3231F9C1501F90F004E2D15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3231F9D1501F90F004E2D15 /* MuseumTagTests-Info.plist */,
+				B3231F9E1501F90F004E2D15 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3231F641501F90D004E2D15 /* MuseumTag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3231FA61501F90F004E2D15 /* Build configuration list for PBXNativeTarget "MuseumTag" */;
+			buildPhases = (
+				B3231F611501F90D004E2D15 /* Sources */,
+				B3231F621501F90D004E2D15 /* Frameworks */,
+				B3231F631501F90D004E2D15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuseumTag;
+			productName = MuseumTag;
+			productReference = B3231F651501F90E004E2D15 /* MuseumTag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3231F931501F90F004E2D15 /* MuseumTagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3231FA91501F90F004E2D15 /* Build configuration list for PBXNativeTarget "MuseumTagTests" */;
+			buildPhases = (
+				B3231F8F1501F90F004E2D15 /* Sources */,
+				B3231F901501F90F004E2D15 /* Frameworks */,
+				B3231F911501F90F004E2D15 /* Resources */,
+				B3231F921501F90F004E2D15 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3231F9A1501F90F004E2D15 /* PBXTargetDependency */,
+			);
+			name = MuseumTagTests;
+			productName = MuseumTagTests;
+			productReference = B3231F941501F90F004E2D15 /* MuseumTagTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3231F5C1501F90D004E2D15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Stanford;
+			};
+			buildConfigurationList = B3231F5F1501F90D004E2D15 /* Build configuration list for PBXProject "MuseumTag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B3231F5A1501F90D004E2D15;
+			productRefGroup = B3231F661501F90E004E2D15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3231F641501F90D004E2D15 /* MuseumTag */,
+				B3231F931501F90F004E2D15 /* MuseumTagTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3231F631501F90D004E2D15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3231F741501F90E004E2D15 /* InfoPlist.strings in Resources */,
+				B3231F7D1501F90F004E2D15 /* MainStoryboard_iPhone.storyboard in Resources */,
+				B3231F801501F90F004E2D15 /* MainStoryboard_iPad.storyboard in Resources */,
+				B3231F851501F90F004E2D15 /* first.png in Resources */,
+				B3231F871501F90F004E2D15 /* first@2x.png in Resources */,
+				B3231F8C1501F90F004E2D15 /* second.png in Resources */,
+				B3231F8E1501F90F004E2D15 /* second@2x.png in Resources */,
+				B3231FC315029B5E004E2D15 /* cantor.jpg in Resources */,
+				B35A9EFA1502AADD0011C871 /* computerhistory.jpg in Resources */,
+				B35A9EFB1502AADD0011C871 /* exploratorium.jpg in Resources */,
+				B35A9EFC1502AADD0011C871 /* guggenheim.jpg in Resources */,
+				B35A9EFD1502AADD0011C871 /* louvre.jpg in Resources */,
+				B35A9EFE1502AADD0011C871 /* moma.jpg in Resources */,
+				B35A9EFF1502AADD0011C871 /* thetech.jpg in Resources */,
+				B35A9F021502AC0A0011C871 /* wax.jpg in Resources */,
+				B35A9F0E1502B1730011C871 /* africa.jpg in Resources */,
+				B35A9F0F1502B1730011C871 /* evans.jpg in Resources */,
+				B35A9F101502B1730011C871 /* hell.jpg in Resources */,
+				B35A9F111502B1730011C871 /* spring.jpg in Resources */,
+				B35A9F121502B1730011C871 /* thinker.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3231F911501F90F004E2D15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3231FA01501F90F004E2D15 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3231F921501F90F004E2D15 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3231F611501F90D004E2D15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3231F761501F90E004E2D15 /* main.m in Sources */,
+				B3231F7A1501F90E004E2D15 /* AppDelegate.m in Sources */,
+				B3231F831501F90F004E2D15 /* MuseumsVC.m in Sources */,
+				B3231F8A1501F90F004E2D15 /* CheckInVC.m in Sources */,
+				B3231FB3150210CB004E2D15 /* YouVC.m in Sources */,
+				B3231FBD150295F5004E2D15 /* MuseumCell.m in Sources */,
+				B3231FC1150299FB004E2D15 /* MuseumSelectedCell.m in Sources */,
+				B35A9F051502ADD30011C871 /* MuseumVC.m in Sources */,
+				B35A9F081502AFEF0011C871 /* ExhibitCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3231F8F1501F90F004E2D15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3231FA31501F90F004E2D15 /* MuseumTagTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3231F9A1501F90F004E2D15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3231F641501F90D004E2D15 /* MuseumTag */;
+			targetProxy = B3231F991501F90F004E2D15 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3231F721501F90E004E2D15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3231F731501F90E004E2D15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B3231F7B1501F90F004E2D15 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3231F7C1501F90F004E2D15 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B3231F7E1501F90F004E2D15 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3231F7F1501F90F004E2D15 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B3231F9E1501F90F004E2D15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3231F9F1501F90F004E2D15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3231FA41501F90F004E2D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3231FA51501F90F004E2D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3231FA71501F90F004E2D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MuseumTag/MuseumTag-Prefix.pch";
+				INFOPLIST_FILE = "MuseumTag/MuseumTag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B3231FA81501F90F004E2D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MuseumTag/MuseumTag-Prefix.pch";
+				INFOPLIST_FILE = "MuseumTag/MuseumTag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B3231FAA1501F90F004E2D15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MuseumTag.app/MuseumTag";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MuseumTag/MuseumTag-Prefix.pch";
+				INFOPLIST_FILE = "MuseumTagTests/MuseumTagTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B3231FAB1501F90F004E2D15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MuseumTag.app/MuseumTag";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MuseumTag/MuseumTag-Prefix.pch";
+				INFOPLIST_FILE = "MuseumTagTests/MuseumTagTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3231F5F1501F90D004E2D15 /* Build configuration list for PBXProject "MuseumTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3231FA41501F90F004E2D15 /* Debug */,
+				B3231FA51501F90F004E2D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3231FA61501F90F004E2D15 /* Build configuration list for PBXNativeTarget "MuseumTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3231FA71501F90F004E2D15 /* Debug */,
+				B3231FA81501F90F004E2D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3231FA91501F90F004E2D15 /* Build configuration list for PBXNativeTarget "MuseumTagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3231FAA1501F90F004E2D15 /* Debug */,
+				B3231FAB1501F90F004E2D15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3231F5C1501F90D004E2D15 /* Project object */;
+}
